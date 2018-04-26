@@ -1,0 +1,43 @@
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.exe.config
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.exe
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.pdb
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csprojResolveAssemblyReference.cache
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Form1.resources
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Properties.Resources.resources
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csproj.GenerateResource.Cache
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.exe
+c:\users\class\documents\visual studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.pdb
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Form2.resources
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Clients.resources
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\clientsList.json
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.dll
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.dll
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.xml
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Class\Documents\Visual Studio 2015\Projects\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.xml
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\clientsList.json
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.exe.config
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.exe
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.pdb
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.dll
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.dll
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.xml
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.xml
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Clients.resources
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Form1.resources
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Form2.resources
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Properties.Resources.resources
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csproj.GenerateResource.cache
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csproj.CopyComplete
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.exe
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.pdb
