@@ -16,6 +16,6 @@ namespace TaxReturnCalculator
         public string name { get; set; }
         public double id { get; set; }
         public string pass { get; set; }
-        public string secondPass { get; set; } = "null";
+        public string secondPass { get; set; } 
     }
 }
