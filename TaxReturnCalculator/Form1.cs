@@ -18,8 +18,11 @@ namespace TaxReturnCalculator
 
             radioFixedFee.Checked = true;
             ChangeSymbol();
+
+            btnGross.BackColor = Color.Green;
+            btnGross.ForeColor = Color.White;
         }
-        public string chooseMetCalc = "Gross Invoices";
+        public string chooseMetCalc = "Gross paid";
         //int adminFeeCount;
 
         private void AddPay_Click(object sender, EventArgs e)
@@ -28,7 +31,7 @@ namespace TaxReturnCalculator
             if(double.TryParse(inputPay.Text, out sum))
             {
                 listInvoice.Items.Add(sum);
-                invoicesCount.Text = "No: " + listInvoice.Items.Count.ToString();
+                invoicesCount.Text = "Nr: " + listInvoice.Items.Count.ToString();
             }            
             inputPay.Text = "";
             
@@ -57,20 +60,20 @@ namespace TaxReturnCalculator
 
             if (radioFixedFee.Checked)
             {
-                if (chooseMetCalc == "Gross Invoices")
+                if (chooseMetCalc == "Gross paid")
                 {
                     total = total - adminFee;
                     ResultTax = total * 0.20;
                     ResultNet = total - ResultTax;
                     ResultGross = total + adminFee;
                 }
-                else if (chooseMetCalc == "Net Invoices")
+                else if (chooseMetCalc == "Net paid")
                 {
                     ResultTax = total * 0.25;
                     ResultGross = total + ResultTax + adminFee;
                     ResultNet = total;
                 }
-                else if (chooseMetCalc == "Tax Invoices")
+                else if (chooseMetCalc == "Tax paid")
                 {
                     ResultGross = total * 5;
                     ResultNet = ResultGross - total;
@@ -78,14 +81,14 @@ namespace TaxReturnCalculator
                 }
             }else
             {
-                if (chooseMetCalc == "Gross Invoices")
+                if (chooseMetCalc == "Gross paid")
                 {
                     ResultGross = total;
                     total = total - (total * (adminFee / 100));
                     ResultTax = total * 0.20;
                     ResultNet = total - ResultTax;
                 }
-                else if (chooseMetCalc == "Net Invoices")
+                else if (chooseMetCalc == "Net paid")
                 {
                     double tempPercentage = 100 - adminFee;
                     total = total * 100 / 80;
@@ -93,7 +96,7 @@ namespace TaxReturnCalculator
                     ResultTax = total * 0.20;
                     ResultNet = total - ResultTax;
                 }
-                else if (chooseMetCalc == "Tax Invoices")
+                else if (chooseMetCalc == "Tax paid")
                 {
                     ResultGross = total * 5;
                     ResultNet = ResultGross - total;
@@ -105,15 +108,16 @@ namespace TaxReturnCalculator
             ResultNet = Math.Round(ResultNet, 2);
             ResultTax = Math.Round(ResultTax, 2);
 
-            resultGross.Text = "£" + ResultGross.ToString();
-            resultNet.Text = "£" + ResultNet.ToString();
-            resultTax.Text = "£" + ResultTax.ToString();
+            resultGross.Text = "£ " + ResultGross.ToString();
+            resultNet.Text = "£ " + ResultNet.ToString();
+            resultTax.Text = "£ " + ResultTax.ToString();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             var item = listInvoice.SelectedItem;
             listInvoice.Items.Remove(item);
+            invoicesCount.Text = "Nr: " + listInvoice.Items.Count.ToString();
         }
 
         private void btnClearAll_Click(object sender, EventArgs e)
@@ -123,18 +127,37 @@ namespace TaxReturnCalculator
 
         private void chooseMet1_Click(object sender, EventArgs e)
         {
-            chooseMetCalc = "Gross Invoices";
+            chooseMetCalc = "Gross paid";           
             selectMetCalc.Text = chooseMetCalc;
+            ResetColor();
+            btnGross.BackColor = Color.Green;
+            btnGross.ForeColor = Color.White;
         }
         private void chooseMet2_Click(object sender, EventArgs e)
         {
-            chooseMetCalc = "Net Invoices";
+            chooseMetCalc = "Net paid";
             selectMetCalc.Text = chooseMetCalc;
+            ResetColor();
+            btnNet.BackColor = Color.Green;
+            btnNet.ForeColor = Color.White;
         }
         private void chooseMet3_Click(object sender, EventArgs e)
         {
-            chooseMetCalc = "Tax Invoices";
+            chooseMetCalc = "Tax paid";
             selectMetCalc.Text = chooseMetCalc;
+            ResetColor();
+            btnTax.BackColor = Color.Green;
+            btnTax.ForeColor = Color.White;
+        }
+
+        private void ResetColor()
+        {
+            btnGross.BackColor = Color.Gainsboro;
+            btnNet.BackColor = Color.Gainsboro;
+            btnTax.BackColor = Color.Gainsboro;
+            btnGross.ForeColor = Color.Black;
+            btnNet.ForeColor = Color.Black;
+            btnTax.ForeColor = Color.Black;
         }
 
         

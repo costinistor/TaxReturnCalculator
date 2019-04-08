@@ -46,9 +46,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.selectMetCalc = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnTax = new System.Windows.Forms.Button();
+            this.btnNet = new System.Windows.Forms.Button();
+            this.btnGross = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnBackNum = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
@@ -71,6 +71,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.invoicesCount = new System.Windows.Forms.Label();
             this.btnOpenClients = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -83,12 +85,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Location = new System.Drawing.Point(42, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 24);
+            this.label1.Size = new System.Drawing.Size(245, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tax Return Calculator";
+            this.label1.Text = "Tax Return lu\' Costica";
             // 
             // AddPay
             // 
@@ -124,19 +127,21 @@
             this.listInvoice.ItemHeight = 18;
             this.listInvoice.Location = new System.Drawing.Point(266, 116);
             this.listInvoice.Name = "listInvoice";
-            this.listInvoice.Size = new System.Drawing.Size(127, 274);
+            this.listInvoice.Size = new System.Drawing.Size(133, 274);
             this.listInvoice.TabIndex = 2;
             // 
             // btnCalculate
             // 
+            this.btnCalculate.BackColor = System.Drawing.Color.LightCyan;
             this.btnCalculate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(551, 396);
+            this.btnCalculate.Location = new System.Drawing.Point(562, 395);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 28);
+            this.btnCalculate.Size = new System.Drawing.Size(110, 28);
             this.btnCalculate.TabIndex = 3;
             this.btnCalculate.Text = "Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.UseVisualStyleBackColor = false;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // resultGross
@@ -144,17 +149,17 @@
             this.resultGross.AutoSize = true;
             this.resultGross.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultGross.ForeColor = System.Drawing.Color.DarkRed;
-            this.resultGross.Location = new System.Drawing.Point(99, 12);
+            this.resultGross.Location = new System.Drawing.Point(145, 12);
             this.resultGross.Name = "resultGross";
-            this.resultGross.Size = new System.Drawing.Size(49, 18);
+            this.resultGross.Size = new System.Drawing.Size(54, 18);
             this.resultGross.TabIndex = 4;
-            this.resultGross.Text = "£0.00";
+            this.resultGross.Text = "£ 0.00";
             // 
             // btnClear
             // 
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(343, 396);
+            this.btnClear.Location = new System.Drawing.Point(349, 396);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(50, 28);
             this.btnClear.TabIndex = 5;
@@ -180,9 +185,9 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Location = new System.Drawing.Point(407, 260);
+            this.panel1.Location = new System.Drawing.Point(413, 260);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 130);
+            this.panel1.Size = new System.Drawing.Size(259, 130);
             this.panel1.TabIndex = 7;
             // 
             // panel7
@@ -192,7 +197,7 @@
             this.panel7.Controls.Add(this.resultNet);
             this.panel7.Location = new System.Drawing.Point(0, 86);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(217, 42);
+            this.panel7.Size = new System.Drawing.Size(258, 42);
             this.panel7.TabIndex = 13;
             // 
             // label3
@@ -201,20 +206,20 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(20, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 18);
+            this.label3.Size = new System.Drawing.Size(70, 18);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Net";
+            this.label3.Text = "Net paid";
             // 
             // resultNet
             // 
             this.resultNet.AutoSize = true;
             this.resultNet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultNet.ForeColor = System.Drawing.Color.DarkRed;
-            this.resultNet.Location = new System.Drawing.Point(99, 12);
+            this.resultNet.Location = new System.Drawing.Point(145, 12);
             this.resultNet.Name = "resultNet";
-            this.resultNet.Size = new System.Drawing.Size(49, 18);
+            this.resultNet.Size = new System.Drawing.Size(54, 18);
             this.resultNet.TabIndex = 5;
-            this.resultNet.Text = "£0.00";
+            this.resultNet.Text = "£ 0.00";
             // 
             // panel6
             // 
@@ -223,7 +228,7 @@
             this.panel6.Controls.Add(this.resultTax);
             this.panel6.Location = new System.Drawing.Point(0, 43);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(217, 42);
+            this.panel6.Size = new System.Drawing.Size(258, 42);
             this.panel6.TabIndex = 13;
             // 
             // label4
@@ -232,20 +237,20 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(20, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 18);
+            this.label4.Size = new System.Drawing.Size(113, 18);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Taxes";
+            this.label4.Text = "Tax deduction";
             // 
             // resultTax
             // 
             this.resultTax.AutoSize = true;
             this.resultTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultTax.ForeColor = System.Drawing.Color.DarkRed;
-            this.resultTax.Location = new System.Drawing.Point(99, 12);
+            this.resultTax.Location = new System.Drawing.Point(145, 12);
             this.resultTax.Name = "resultTax";
-            this.resultTax.Size = new System.Drawing.Size(49, 18);
+            this.resultTax.Size = new System.Drawing.Size(54, 18);
             this.resultTax.TabIndex = 6;
-            this.resultTax.Text = "£0.00";
+            this.resultTax.Text = "£ 0.00";
             // 
             // label2
             // 
@@ -253,17 +258,18 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(20, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 18);
+            this.label2.Size = new System.Drawing.Size(91, 18);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Gross";
+            this.label2.Text = "Gross paid";
             // 
             // selectMetCalc
             // 
             this.selectMetCalc.AutoSize = true;
-            this.selectMetCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectMetCalc.Location = new System.Drawing.Point(50, 89);
+            this.selectMetCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectMetCalc.ForeColor = System.Drawing.Color.DarkGreen;
+            this.selectMetCalc.Location = new System.Drawing.Point(46, 89);
             this.selectMetCalc.Name = "selectMetCalc";
-            this.selectMetCalc.Size = new System.Drawing.Size(121, 20);
+            this.selectMetCalc.Size = new System.Drawing.Size(135, 20);
             this.selectMetCalc.TabIndex = 8;
             this.selectMetCalc.Text = "Gross Invoices";
             // 
@@ -271,47 +277,54 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Controls.Add(this.AddPay);
-            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.btnTax);
             this.panel2.Controls.Add(this.inputPay);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btnNet);
+            this.panel2.Controls.Add(this.btnGross);
             this.panel2.Location = new System.Drawing.Point(47, 116);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 80);
             this.panel2.TabIndex = 9;
             // 
-            // button7
+            // btnTax
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Location = new System.Drawing.Point(140, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(64, 26);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Tax Pay";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.chooseMet3_Click);
+            this.btnTax.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnTax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTax.Location = new System.Drawing.Point(140, 0);
+            this.btnTax.Name = "btnTax";
+            this.btnTax.Size = new System.Drawing.Size(64, 26);
+            this.btnTax.TabIndex = 12;
+            this.btnTax.Text = "Tax Paid";
+            this.btnTax.UseVisualStyleBackColor = false;
+            this.btnTax.Click += new System.EventHandler(this.chooseMet3_Click);
             // 
-            // button6
+            // btnNet
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Location = new System.Drawing.Point(72, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(68, 26);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Net Pay";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.chooseMet2_Click);
+            this.btnNet.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNet.Location = new System.Drawing.Point(72, 0);
+            this.btnNet.Name = "btnNet";
+            this.btnNet.Size = new System.Drawing.Size(68, 26);
+            this.btnNet.TabIndex = 11;
+            this.btnNet.Text = "Net Paid";
+            this.btnNet.UseVisualStyleBackColor = false;
+            this.btnNet.Click += new System.EventHandler(this.chooseMet2_Click);
             // 
-            // button5
+            // btnGross
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(72, 26);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Gross Pay";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.chooseMet1_Click);
+            this.btnGross.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnGross.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGross.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGross.ForeColor = System.Drawing.Color.Black;
+            this.btnGross.Location = new System.Drawing.Point(0, 0);
+            this.btnGross.Name = "btnGross";
+            this.btnGross.Size = new System.Drawing.Size(72, 26);
+            this.btnGross.TabIndex = 10;
+            this.btnGross.Text = "Gross Paid";
+            this.btnGross.UseVisualStyleBackColor = false;
+            this.btnGross.Click += new System.EventHandler(this.chooseMet1_Click);
             // 
             // panel3
             // 
@@ -487,9 +500,9 @@
             this.panel4.Controls.Add(this.radioPercentageFee);
             this.panel4.Controls.Add(this.inputAdminFee);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(407, 116);
+            this.panel4.Location = new System.Drawing.Point(413, 116);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(219, 127);
+            this.panel4.Size = new System.Drawing.Size(259, 127);
             this.panel4.TabIndex = 11;
             // 
             // feeInputSimbol
@@ -542,7 +555,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(42, 5);
+            this.label9.Location = new System.Drawing.Point(20, 5);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(139, 17);
             this.label9.TabIndex = 0;
@@ -553,25 +566,25 @@
             this.panel5.BackColor = System.Drawing.Color.Silver;
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.resultGross);
-            this.panel5.Location = new System.Drawing.Point(408, 261);
+            this.panel5.Location = new System.Drawing.Point(414, 261);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(217, 42);
+            this.panel5.Size = new System.Drawing.Size(258, 42);
             this.panel5.TabIndex = 12;
             // 
             // invoicesCount
             // 
             this.invoicesCount.AutoSize = true;
-            this.invoicesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invoicesCount.Location = new System.Drawing.Point(192, 89);
+            this.invoicesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoicesCount.Location = new System.Drawing.Point(350, 96);
             this.invoicesCount.Name = "invoicesCount";
-            this.invoicesCount.Size = new System.Drawing.Size(46, 20);
+            this.invoicesCount.Size = new System.Drawing.Size(39, 17);
             this.invoicesCount.TabIndex = 13;
-            this.invoicesCount.Text = "No: 0";
+            this.invoicesCount.Text = "Nr: 0";
             // 
             // btnOpenClients
             // 
             this.btnOpenClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenClients.Location = new System.Drawing.Point(539, 80);
+            this.btnOpenClients.Location = new System.Drawing.Point(586, 80);
             this.btnOpenClients.Name = "btnOpenClients";
             this.btnOpenClients.Size = new System.Drawing.Size(86, 29);
             this.btnOpenClients.TabIndex = 14;
@@ -579,12 +592,33 @@
             this.btnOpenClients.UseVisualStyleBackColor = true;
             this.btnOpenClients.Click += new System.EventHandler(this.btnOpenClients_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(265, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 17);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Statements";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 463);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(136, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "All right reserved lu\' Costica";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(673, 473);
+            this.ClientSize = new System.Drawing.Size(717, 482);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnOpenClients);
             this.Controls.Add(this.invoicesCount);
             this.Controls.Add(this.panel5);
@@ -598,8 +632,9 @@
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.listInvoice);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Tax Return Calc";
+            this.Text = "Tax Return Calculator";
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -635,9 +670,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label selectMetCalc;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnTax;
+        private System.Windows.Forms.Button btnNet;
+        private System.Windows.Forms.Button btnGross;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnNum_1;
         private System.Windows.Forms.Button btnBackNum;
@@ -662,6 +697,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label invoicesCount;
         private System.Windows.Forms.Button btnOpenClients;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

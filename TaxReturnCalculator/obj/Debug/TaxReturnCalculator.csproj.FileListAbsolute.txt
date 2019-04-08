@@ -31,7 +31,6 @@ C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\En
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.xml
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\System.Data.SQLite.dll.config
-C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csprojResolveAssemblyReference.cache
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Clients.resources
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Form1.resources
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.Form2.resources
@@ -41,3 +40,7 @@ C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\Ta
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.csproj.CopyComplete
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.exe
 C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.pdb
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.exe.manifest
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\bin\Debug\TaxReturnCalculator.application
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.exe.manifest
+C:\Users\Costi\source\repos\TaxReturnCalculator\TaxReturnCalculator\obj\Debug\TaxReturnCalculator.application
